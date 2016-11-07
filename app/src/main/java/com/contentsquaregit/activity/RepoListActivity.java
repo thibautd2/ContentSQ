@@ -44,8 +44,6 @@ public class RepoListActivity extends AppCompatActivity{
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 int totalItemCount = LayoutManager.getItemCount();
                 int lastVisibleItemPosition = ((LinearLayoutManager) LayoutManager).findLastVisibleItemPosition();
-                Log.e("las", ""+lastVisibleItemPosition);
-                Log.e("total", ""+totalItemCount);
                 if (!GetRepoList.loading && lastVisibleItemPosition + reloadRange > totalItemCount) {
                     Pair<String, String> arg = new Pair<>("since", GetRepoList.lastIndex);
                     ArrayList<Pair<String,String>> arguments = new ArrayList<>();
