@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fast-Git</string>
+    <string name="hello_world">Welcome on Fast-Git</string>
+
+    <string name="main_search">Search</string>
+    <string name="main_progress_title">"Fetching repositories"</string>
+    <string name="main_progress_message">"Please wait ..."</string>
+    <string name="main_network_error"> "No network connection available."</string>
+    <string name="main_api_error"> "To much call to GitHub API, data unavailable"</string>
+
+    <string name="repo_list_owner"> "by "</string>
+    <string name="repo_list_leave">"Press back again to leave Fast-Git"</string>
+    <string name="repo_list_progress_title">"Fetching repository details"</string>
+    <string name="repo_list_progress_message">"Please wait ..."</string>
+    <string name="repo_list_network_error">Repository details not available"</string>
+    <string name="repo_list_more_result">"Fetching more result"</string>
+
+</resources>

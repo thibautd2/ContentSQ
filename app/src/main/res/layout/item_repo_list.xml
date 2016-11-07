@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/item_repo_layout"
+    android:layout_height="90dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        app:srcCompat="@android:color/background_dark"
+        android:id="@+id/item_repo_user_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:text="Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_repo_title"
+        android:gravity="left"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/item_repo_username"
+        android:singleLine="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="?attr/colorControlHighlight"
+        android:id="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:text="@string/repo_list_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:id="@+id/item_repo_username"
+        android:layout_alignBottom="@+id/item_repo_user_avatar"
+        android:layout_toEndOf="@+id/item_repo_user_avatar"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_repo_title"
+        android:layout_alignStart="@+id/item_repo_title"
+        android:id="@+id/item_repo_description"
+        android:layout_alignEnd="@+id/imageView3"
+        android:singleLine="true"
+        android:textStyle="normal|italic" />
+
+</RelativeLayout>
